@@ -75,12 +75,11 @@ def value_iteration(env, epsilon=0.0001):
 
 
 
-def extract_optimal_policy(V, env, epsilon=0.0001):
+def extract_optimal_policy(V, env):
     """ 
     Perform a one step lookahead to find optimal policy
     :param V: precomputed values from value iteration
     :param env: the MDP
-    :param epsilon: numerical precision for values to determine stopping condition
     :return: the optimal policy
     """
     n = env.num_states
